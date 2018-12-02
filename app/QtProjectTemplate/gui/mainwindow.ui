@@ -31,7 +31,7 @@
     <item>
      <widget class="QLabel" name="label">
       <property name="text">
-       <string>Hello World!</string>
+       <string>Example</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>

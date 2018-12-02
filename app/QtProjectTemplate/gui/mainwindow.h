@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 
+#include "models/router.h"
+
 namespace Ui {
 class MainWindow;
 }

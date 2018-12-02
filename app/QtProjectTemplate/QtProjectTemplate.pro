@@ -26,10 +26,14 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        gui/mainwindow.cpp
+        gui/mainwindow.cpp \
+    models/repository/repository.cpp \
+    models/router.cpp
 
 HEADERS += \
-        gui/mainwindow.h
+        gui/mainwindow.h \
+    models/repository/repository.h \
+    models/router.h
 
 FORMS += \
         gui/mainwindow.ui
