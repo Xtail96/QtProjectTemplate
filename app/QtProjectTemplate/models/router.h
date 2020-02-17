@@ -14,13 +14,13 @@ public:
     static Router& getInstance();
     ~Router();
 
-     Repository* getRepository();
+     Repository& getRepository();
 
 private:
     explicit Router(QObject *parent = nullptr);
 
     /// Репозиторий, хранящий текущее состояние
-    QScopedPointer<Repository> m_repository;
+    Repository m_repository;
 
     /**
      * @brief Подключет слоты к сигналам полей класса

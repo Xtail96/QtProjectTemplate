@@ -2,7 +2,7 @@
 
 Router::Router(QObject *parent) :
     QObject(parent),
-    m_repository(new Repository(this))
+    m_repository(this)
 {
     setupConnections();
 }
@@ -22,9 +22,9 @@ Router &Router::getInstance()
     return *m_instance;
 }
 
-Repository *Router::getRepository()
+Repository &Router::getRepository()
 {
-    return m_repository.data();
+    return m_repository;
 }
 
 void Router::setupConnections()

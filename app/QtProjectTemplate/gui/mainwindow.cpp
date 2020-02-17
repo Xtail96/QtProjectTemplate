@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->mainToolBar->hide();
 
     Router& router = Router::getInstance();
-    ui->label->setText(router.getRepository()->helloString());
+    ui->label->setText(router.getRepository().helloString());
 
     // установка оформления statusBar
     ui->statusBar->setStyleSheet("background-color: #333; color: #33bb33");
