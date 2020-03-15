@@ -28,12 +28,14 @@ SOURCES += \
         main.cpp \
         gui/mainwindow.cpp \
     models/repository/repository.cpp \
-    models/router.cpp
+    models/router.cpp \
+    models/settings_manager/settings_manager.cpp
 
 HEADERS += \
         gui/mainwindow.h \
     models/repository/repository.h \
-    models/router.h
+    models/router.h \
+    models/settings_manager/settings_manager.h
 
 FORMS += \
         gui/mainwindow.ui
