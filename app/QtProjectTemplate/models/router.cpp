@@ -4,7 +4,7 @@ Router::Router(QObject *parent) :
     QObject(parent),
     m_repository(this)
 {
-    setupConnections();
+    this->setupConnections();
 }
 
 Router::~Router()

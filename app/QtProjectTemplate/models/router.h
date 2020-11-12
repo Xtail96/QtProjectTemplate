@@ -14,7 +14,7 @@ public:
     static Router& getInstance();
     ~Router();
 
-     Repository& getRepository();
+    Repository& getRepository();
 
 private:
     explicit Router(QObject *parent = nullptr);
